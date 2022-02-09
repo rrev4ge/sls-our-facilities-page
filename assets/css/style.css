@@ -19,16 +19,29 @@ header :first-child {
 }
 
 main {
-
     min-height: 90vh;
     background-color:rgb(241, 239, 239);
 }
 
 .facilitiesContainer {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.facilitiesContainerBody {
     position: relative;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 footer {
@@ -41,18 +54,30 @@ footer {
     align-items: center;
 }
 
+.facilitiInfoItem {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+li{
+    margin-left:25px;
+}
+
 .gallery {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
-    width: 60%;
+    max-width: 300px;
 }
 
-.facilitiTxt {
-    width: 40%;
+.facilitiInfo {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    gap: 5px;
 }
 
 .filterLink {
@@ -60,66 +85,63 @@ footer {
 }
 
 .filterLink-active {
-    background-color: blue;
-    color: aliceblue;
+    color: purple;
+    text-decoration: underline;
 }
 
 .filterList {
-    position: absolute;
+    width: 20%;
+    /* position: sticky;
     left: 10px;
-    top: 30px;
+    top: 30px; */
     border-radius: 3px;
-    border: 1px solid lavenderblush;
-    background-color: lavenderblush;
+    color: blue;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 15px;
+    justify-content: left;
 }
 
-.row {
+.galleryList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 3px;
     justify-content: left;
     width: 300px;
 }
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  /* width: 25%; */
-  padding: 10px;
-}
 
-/* Style the images inside the grid */
-.column img {
+
+.galleryListItem {
     width: 50px;
-  opacity: 0.8;
-  cursor: pointer;
+    opacity: 0.8;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 3px;
 }
 
-.column img:hover {
+.galleryListItem:hover {
   opacity: 1;
 }
 
-/* Clear floats after the columns */
-.row::before {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-    width: 300px;
+.galleryExpandedBox {
     position: relative;
+}
+.galleryExpandedImg {
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 3px;
     /* display: none; */
 }
 
-.container img{
+.facilitiTitle {
     width: 100%;
+    text-align: center;
 }
 
-/* Expanding image text */
+
 #imgText {
   position: absolute;
   bottom: 15px;

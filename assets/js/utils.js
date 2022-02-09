@@ -2,7 +2,6 @@
 
 function domElementGenerator (selector, parentSelector, className='', innerHTML='') {
         const element = document.createElement(selector);
-        console.log(className);
         if (className) {element.classList.add(className)};
         if (innerHTML) {element.innerHTML = innerHTML};
         const parent = document.querySelector(parentSelector);

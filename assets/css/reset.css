@@ -32,7 +32,7 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: none;
+    /* list-style: none; */
 }
 blockquote, q {
     quotes: none;
@@ -54,7 +54,7 @@ button {
     text-decoration: none;
     background: none;
     cursor: pointer;
-    transition: background 250ms ease-in-out, 
+    transition: background 250ms ease-in-out,
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
