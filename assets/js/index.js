@@ -70,6 +70,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 img.src = photo;
                 expandedImg.src = img.src;
                 img.alt = `${facility.title}-photo-${key}`;
+                expandedImg.alt = img.alt;
                 expandedImgTxt.innerHTML = img.alt;
                 img.onclick = (e) => this.setExpandedImg(e.target);
                 list.append(img);

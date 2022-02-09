@@ -19,38 +19,46 @@ header :first-child {
 }
 
 main {
+    width: 100%;
+    display: flex;
     min-height: 90vh;
     background-color:rgb(241, 239, 239);
+    flex-direction: column;
+    justify-content: top;
+    align-content: center;
 }
 
 .facilitiesContainer {
     padding-top: 25px;
     width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
 
 .facilitiesContainerBody {
     position: relative;
-    width: 75%;
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 40px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    min-height: 10vh;
-    background-image: url(./../img/about-trans-img.jpg);
-    color: white;
+.facilitiTitle {
+    width: 100%;
     text-align: center;
-    align-items: center;
+}
+
+.facilitiInfo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 500px;
 }
 
 .facilitiInfoItem {
@@ -63,20 +71,16 @@ li{
     margin-left:25px;
 }
 
-.gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    max-width: 300px;
-}
 
-.facilitiInfo {
-    max-width: 500px;
+
+.filterList {
+    width: 300px;
+    color: blue;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: left;
-    gap: 5px;
+    gap: 15px;
+    align-items: flex-end;
 }
 
 .filterLink {
@@ -88,19 +92,12 @@ li{
     text-decoration: underline;
 }
 
-.filterList {
-    padding-left: 25px;
-    width: 20%;
-    /* position: sticky;
-    left: 10px;
-    top: 30px; */
-    border-radius: 3px;
-    color: blue;
+.gallery {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    gap: 15px;
-    justify-content: left;
+    gap: 5px;
+    align-items: center;
+    width: 300px;
 }
 
 .galleryList {
@@ -115,6 +112,7 @@ li{
 
 .galleryListItem {
     width: 50px;
+    height: 50px;
     opacity: 0.8;
     cursor: pointer;
     border: 3px solid white;
@@ -131,14 +129,9 @@ li{
 }
 .galleryExpandedImg {
     width: 300px;
+    height: 300px;
     border: 3px solid white;
     border-radius: 3px;
-    /* display: none; */
-}
-
-.facilitiTitle {
-    width: 100%;
-    text-align: center;
 }
 
 
@@ -150,7 +143,6 @@ li{
   font-size: 20px;
 }
 
-/* Closable button inside the image */
 .closeBtn {
   position: absolute;
   top: 10px;
@@ -160,10 +152,26 @@ li{
   cursor: pointer;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    background-image: url(./../img/about-trans-img.jpg);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
 @media screen and (max-device-width:728px){
+
+    .facilitiInfo {
+        width: 300px;
+    }
 
 }
 
 @media screen and (min-device-width:729px) and (max-device-width:1024px){
-
+    .facilitiInfo {
+        width: 500px;
+    }
 }

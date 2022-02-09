@@ -3,7 +3,7 @@
 const facilities = [
     {
         id: "Dnepr_1",
-        title: "Dnepr_1",
+        title: "Днепр 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Днепропетровская область, Солонянский район",
@@ -24,7 +24,7 @@ const facilities = [
     },
     {
         id: "GuliayPole_1",
-        title: "Гуляйпольский район 1",
+        title: "Гуляйполе 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Гуляйпольский район",
@@ -42,8 +42,8 @@ const facilities = [
         ],
     },
     {
-        id: "GuliayPole_1_Uspenovka",
-        title: "GuliayPole_1_Uspenovka",
+        id: "GuliayPole_Uspenovka_1",
+        title: "Успеновка 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Гуляйпольский район",
@@ -63,7 +63,7 @@ const facilities = [
     },
     {
         id: "GuliayPole_2",
-        title: "GuliayPole_2",
+        title: "Гуляйполе 2",
         info: {
             name: "Солнечная электростанция",
             location: "Запорожская область, г. Гуляйполе",
@@ -82,7 +82,7 @@ const facilities = [
     },
     {
         id: "GuliayPole_3",
-        title: "GuliayPole_3",
+        title: "Гуляйполе 3",
         info: {
             name: "‼Домашняя солнечная станция 33,6 кВт. панельной мощности‼",
             location: "Запорожская область, г. Гуляйполе",
@@ -101,9 +101,9 @@ const facilities = [
     },
     {
         id: "Kamyanka_1",
-        title: "Kamyanka_1",
+        title: "Каменка 1",
         info: {
-            name: null,
+            name: "!!!Здесь что-то, когда-то, где-то, может быть, наверное появится!!!",
             location: null,
             accessories: null,
             price: null,
@@ -121,7 +121,7 @@ const facilities = [
     },
     {
         id: "Pology_1",
-        title: "Pology_1",
+        title: "Пологи 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Пологовский район",
@@ -143,7 +143,7 @@ const facilities = [
     },
     {
         id: "Pology_2",
-        title: "Pology_2",
+        title: "Пологи 2",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Пологовский район",
@@ -163,7 +163,7 @@ const facilities = [
     },
     {
         id: "Priazovie_1",
-        title: "Priazovie_1",
+        title: "Приазовье 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Приазовский район",
@@ -184,7 +184,7 @@ const facilities = [
     },
     {
         id: "Zaporizhzhia_1",
-        title: "Zaporizhzhia_1",
+        title: "Запорожье 1",
         info: {
             name: "Солнечная электростанция 30 кВт.",
             location: "Запорожская область, Пологовский район",
