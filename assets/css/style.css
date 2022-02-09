@@ -24,6 +24,7 @@ main {
 }
 
 .facilitiesContainer {
+    padding-top: 25px;
     width: 100%;
     display: flex;
     gap: 40px;
