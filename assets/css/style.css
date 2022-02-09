@@ -24,8 +24,6 @@ main {
 }
 
 .facilitiesContainer {
-    padding-top: 25px;
-    padding-left: 25px;
     width: 100%;
     display: flex;
     gap: 40px;
@@ -90,6 +88,7 @@ li{
 }
 
 .filterList {
+    padding-left: 25px;
     width: 20%;
     /* position: sticky;
     left: 10px;
